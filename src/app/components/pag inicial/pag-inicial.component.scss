@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+$rajdhani: 'Rajdhani', serif;
+
+.background{
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  .titulo{
+    color: white;
+    font-size: 100px;
+    font-family: $rajdhani;
+  }
+  .curriculo{
+    font-family: $rajdhani;
+    font-size: 60px;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    position: absolute;
+    bottom: 125px;
+    right: 100px;
+    .curved-icon{
+      margin-right: 20px;
+    }
+  }
+  .projetos{
+    font-family: $rajdhani;
+    font-size: 60px;
+    display: flex;
+    align-items: flex-start;
+    color: white;
+    position: absolute;
+    top: 125px;
+    left: 100px;
+    .curved-icon{
+      transform: rotateY(180deg);
+      transform: rotate(180deg);
+      margin-left: 20px;
+    }
+  }
+  .linkedin{
+    font-family: $rajdhani;
+    font-size: 60px;
+    display: flex;
+    align-items: flex-start;
+    color: white;
+    position: absolute;
+    top: 125px;
+    right: 100px;
+    .curved-icon{
+      transform: rotateX(180deg);
+      margin-right: 20px;
+    }
+  }
+  .github{
+    font-family: $rajdhani;
+    font-size: 60px;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    position: absolute;
+    bottom: 125px;
+    left: 100px;
+    .curved-icon{
+      transform: rotateY(180deg);
+      margin-left: 20px;
+    }
+  }
+  .seta:hover{
+    color: greenyellow;
+    .curved-icon{
+      background-color: greenyellow !important;
+    }
+  }
+}
