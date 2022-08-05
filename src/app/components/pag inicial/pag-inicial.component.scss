@@ -1,81 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
-$rajdhani: 'Rajdhani', serif;
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+$questrial: 'Questrial', serif;
 
+.d-flex {
+  display: flex;
+}
 .background{
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  background-color: black;
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  .titulo{
+}
+.header {
+  position: absolute;
+  top: 180px;
+  left: 200px;
+  .name {
+    font-family: $questrial;
+    font-size: 50px;
     color: white;
-    font-size: 100px;
-    font-family: $rajdhani;
+    margin-top: 50px;
+
   }
-  .curriculo{
-    font-family: $rajdhani;
-    font-size: 60px;
-    display: flex;
-    align-items: flex-end;
-    color: white;
-    position: absolute;
-    bottom: 125px;
-    right: 100px;
-    .curved-icon{
-      margin-right: 20px;
-    }
+}
+.perfil-image {
+  border-radius: 30%;
+  height: 600px;
+  margin-right: 50px;
+}
+.button {
+  margin-top: 50px;
+  transition: all 0.5s;
+  height: 60px;
+
+}
+.box-icon {
+  position: relative;
+  top: 33px;
+  margin-left: 55px;
+}
+.button-icon {
+  transition: all 0.5s;
+}
+.button:hover {
+  cursor: pointer;
+  .box-icon {
+  border-bottom: 1px solid red;
+
   }
-  .projetos{
-    font-family: $rajdhani;
-    font-size: 60px;
-    display: flex;
-    align-items: flex-start;
-    color: white;
-    position: absolute;
-    top: 125px;
-    left: 100px;
-    .curved-icon{
-      transform: rotateY(180deg);
-      transform: rotate(180deg);
-      margin-left: 20px;
-    }
+  .button-icon {
+    background-color: red !important;
   }
-  .linkedin{
-    font-family: $rajdhani;
-    font-size: 60px;
-    display: flex;
-    align-items: flex-start;
-    color: white;
-    position: absolute;
-    top: 125px;
-    right: 100px;
-    .curved-icon{
-      transform: rotateX(180deg);
-      margin-right: 20px;
-    }
+  .logo-name {
+    color: red;
   }
-  .github{
-    font-family: $rajdhani;
-    font-size: 60px;
-    display: flex;
-    align-items: flex-end;
-    color: white;
-    position: absolute;
-    bottom: 125px;
-    left: 100px;
-    .curved-icon{
-      transform: rotateY(180deg);
-      margin-left: 20px;
-    }
-  }
-  .seta:hover{
-    color: greenyellow;
-    .curved-icon{
-      background-color: greenyellow !important;
-    }
-  }
+}
+.logo-name {
+  position: relative;
+  top: 33px;
+  font-family: $questrial;
+  font-size: 30px;
+  transition: all 0.5s;
+}
+.logo-name.curriculo {
+  right: -360px;
+}
+.logo-name.github {
+  right: -390px;
+}
+.logo-name.linkedin {
+  right: -370px;
+}
+.logo-name.projetos {
+  right: -370px;
 }
