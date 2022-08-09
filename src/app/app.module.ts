@@ -3,22 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PaginaInicial } from './components/pagina inicial/pagina-inicial.component';
+import { PagInicial } from './components/pag inicial/pag-inicial.component';
 import { IconeComponent } from './components/icone/icone.component';
-import { Form } from './components/form/form.component';
-import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PaginaInicial,
-    IconeComponent,
-    Form
+    PagInicial,
+    IconeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
